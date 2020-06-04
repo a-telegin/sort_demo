@@ -40,7 +40,9 @@ bool sortArray(int* array, const std::size_t size)
         for (uint8_t j = i+1 ; j < size ; ++j)
         {
              if (array[i] > array[j])
-                 swap(&array[i], &array[j]);
+                 {
+                     swap(&array[i], &array[j]);
+                 }
         }
     }
     return true;
